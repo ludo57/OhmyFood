@@ -1,0 +1,505 @@
+body {
+    margin: 0;
+    padding: 0px;
+    width: auto;
+    justify-content: center;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.head {
+    font-size: 35px;
+    text-align: center;
+    background-color: green;
+    color: yellow;
+}
+
+h1 {
+    margin: 0;
+}
+
+.titre {
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    background: linear-gradient(to right, #df8116ee 0%, #b55cd8cc 87%);
+    background: -webkit-linear-gradient(to right, #df8116ee 0%, #b55cd8cc 87%);
+    background: -moz-linear-gradient(to right, #df8116ee 0%, #b55cd8cc 87%);
+    background: -o-linear-gradient(to right, #df8116ee 0%, #b55cd8cc 87%);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    padding-bottom: 10px;
+}
+
+.nom-menu {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    width: 100%;
+}
+
+.image {
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+
+.image>img {
+    width: 100%;
+}
+
+.paragraphe {
+    margin: 0;
+    padding: 0;
+}
+
+.paragraphe>p {
+    margin: 0;
+    padding: 0;
+}
+
+.soulignement {
+    width: 0%;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.5s;
+    background-color: black;
+}
+
+.paragraphe:hover>.soulignement {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.plateau-repas {
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.repas {
+    width: 60%;
+    text-align: center;
+}
+
+.prix {
+    font-weight: bolder;
+    font-style: italic;
+    width: 40%;
+    text-align: center;
+}
+
+.appetit {
+    color: orange;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.plaisir {
+    color: darkorchid;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.gourmandises {
+    text-align: justify;
+    font-size: 18px;
+    color: rgba(43, 46, 226, 0.877);
+    padding-bottom: 50px;
+}
+
+.soon {
+    display: flex;
+    color: yellow;
+    background-color: green;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    width: 25%;
+    margin-bottom: 55px;
+}
+
+.pro>p {
+    text-align: center;
+    margin: 0;
+    font-size: 35px;
+    width: 75%;
+    padding: 0;
+}
+
+.suspension>span {
+    margin: 0;
+    font-size: 35px;
+    padding-top: 40px;
+    position: relative;
+    width: 25%;
+}
+
+.suspension span {
+    animation-name: dots;
+    -webkit-animation-name: dots;
+    -moz-animation-name: dots;
+    -o-animation-name: dots;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+}
+
+.suspension span:nth-child(2) {
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+}
+
+.suspension span:nth-child(3) {
+    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+}
+
+@keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.6) translateY(10px);
+    }
+}
+
+@-webkit-keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.6) translateY(10px);
+    }
+}
+
+@-moz-keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.6) translateY(10px);
+    }
+}
+
+@-o-keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.6) translateY(10px);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    color: yellow;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.mentions>p {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.mail>p {
+    font-size: 30px;
+    margin: 0;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.mail:hover {
+    animation-name: shake;
+    -moz-animation-name: shake;
+    -o-animation-name: shake;
+    -webkit-animation-name: shake;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+}
+
+.mentions:hover {
+    animation-name: shake;
+    -moz-animation-name: shake;
+    -o-animation-name: shake;
+    -webkit-animation-name: shake;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@-moz-keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@-webkit-keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@-o-keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .body {
+        width: auto;
+        text-align: justify;
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+        font-size: 55px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+    .plateau-repas {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .nom-menu {
+        display: flex;
+        font-size: 30px;
+        width: 100%;
+    }
+    .menu {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .repas {
+        width: 100%;
+        font-size: 18px;
+        justify-content: center;
+    }
+    .prix {
+        width: 100%;
+        font-size: 20px;
+    }
+    .paragraphe>p {
+        width: 100%;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .paragraphe p {
+        font-size: 30px;
+    }
+    .image {
+        display: none;
+    }
+    .soon {
+        width: 65%;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    .pro>p {
+        font-size: 30px;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .suspension>span {
+        font-size: 30px;
+        margin: 0;
+        width: 50%;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+    a {
+        font-size: 25px;
+        text-align: center;
+        justify-content: space-around;
+    }
+}
