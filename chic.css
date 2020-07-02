@@ -436,7 +436,7 @@ a {
         text-align: center;
     }
     h2 {
-        font-size: 45px;
+        font-size: 35px;
         text-align: center;
     }
     .plateau-repas {
@@ -451,13 +451,12 @@ a {
     }
     .menu {
         display: block;
-        font-size: 20px;
         text-align: center;
         justify-content: space-evenly;
     }
     .repas {
         width: 100%;
-        font-size: 18px;
+        font-size: 20px;
         justify-content: center;
     }
     .prix {
@@ -470,7 +469,7 @@ a {
         justify-content: space-evenly;
     }
     .paragraphe p {
-        font-size: 30px;
+        font-size: 25px;
     }
     .image {
         display: none;
@@ -498,8 +497,8 @@ a {
         justify-content: space-around;
     }
     a {
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 }

@@ -222,20 +222,20 @@ a {
     background-color: green;
     color: yellow;
     justify-content: space-between;
-    text-align: center;
+    text-align: justify;
 }
 
 .mentions>p {
     font-size: 30px;
     text-align: center;
     margin: 0;
-    padding-left: 20px;
+    padding-left: 5px;
 }
 
 .mail>p {
     font-size: 30px;
     margin: 0;
-    padding-right: 20px;
+    padding-right: 25px;
     text-align: center;
 }
 
@@ -417,7 +417,8 @@ a {
 @media screen and (max-width: 1024px) {
     .body {
         width: auto;
-        text-align: justify;
+        text-align: center;
+        justify-content: space-evenly;
         padding: 0;
         margin: 0;
     }
@@ -433,7 +434,7 @@ a {
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     .nom-menu {
         display: flex;
@@ -442,14 +443,13 @@ a {
     }
     .menu {
         display: block;
-        font-size: 25px;
         text-align: center;
         justify-content: space-evenly;
     }
     .repas {
         width: 100%;
-        font-size: 20px;
-        text-align: justify;
+        font-size: 25px;
+        text-align: center;
     }
     .prix {
         width: 100%;
@@ -467,18 +467,18 @@ a {
         display: none;
     }
     .soon {
-        width: 75%;
+        width: 65%;
         text-align: center;
-        margin-bottom: 80px;
+        margin-bottom: 70px;
     }
     .pro>p {
-        font-size: 30px;
+        font-size: 25px;
         width: 50%;
         margin: 0;
         padding: 0;
     }
     .suspension>span {
-        font-size: 30px;
+        font-size: 25px;
         margin: 0;
         width: 50%;
     }
@@ -491,6 +491,6 @@ a {
     a {
         font-size: 25px;
         text-align: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 }

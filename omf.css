@@ -375,59 +375,68 @@ a {
     }
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
+        -webkit-transform: translate(1px, -2px) rotate(-1deg);
+        -moz-transform: translate(1px, -2px) rotate(-1deg);
+        -ms-transform: translate(1px, -2px) rotate(-1deg);
+        -o-transform: translate(1px, -2px) rotate(-1deg);
     }
 }
 
 @media all and (max-width: 1024px) {
     .body {
         width: auto;
-        text-align: justify;
+        text-align: center;
+        justify-content: center;
         padding: 0;
         margin: 0;
-        height: auto;
     }
-    .plateau-repas {
-        display: flex;
-        font-size: 45px;
-    }
-    .lien {
-        display: flex;
+    h1 {
+        font-size: 40px;
         text-align: center;
-        justify-content: space-around;
+    }
+    .partie1 {
+        display: block;
+        justify-content: center;
         width: auto;
     }
     .page-menu {
-        width: auto;
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        justify-content: center;
+    }
+    .partie2 {
+        display: block;
+        text-align: center;
         justify-content: space-evenly;
     }
     a {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        text-align: center;
+        width: auto;
     }
     .titre {
-        font-size: 35px;
+        font-size: 20px;
         text-align: center;
     }
     .info {
-        font-size: 35px;
+        font-size: 20px;
         text-align: center;
     }
     .soon {
-        width: 60%;
-        text-align: center;
-        margin-bottom: 45px;
+        width: 55%;
+        justify-content: center;
+        margin-bottom: 85px;
     }
     .pro>p {
-        font-size: 40px;
+        font-size: 25px;
         width: 50%;
         margin: 0;
         padding: 0;
     }
     .suspension>span {
-        font-size: 40px;
+        font-size: 25px;
         margin: 0;
         width: 50%;
     }
@@ -435,14 +444,15 @@ a {
         position: fixed;
         bottom: 0;
         width: 100%;
-        justify-content: space-around;
+        text-align: center;
+        justify-content: space-evenly;
     }
     .mentions>p {
-        font-size: 35px;
+        font-size: 25px;
         text-align: center;
     }
     .mail p {
-        font-size: 35px;
+        font-size: 25px;
         text-align: center;
     }
 }
