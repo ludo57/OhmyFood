@@ -394,6 +394,9 @@ a {
         font-size: 40px;
         text-align: center;
     }
+    .lien {
+        margin: 15px auto;
+    }
     .partie1 {
         display: block;
         justify-content: center;
