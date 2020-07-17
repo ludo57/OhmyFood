@@ -4,7 +4,7 @@ body {
     width: auto;
     justify-content: center;
     box-shadow: 0px 0px 5px grey;
-    background-color:#FDFFFD;
+    background-color: #FDFFFD;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
 }
@@ -419,7 +419,7 @@ a {
     }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1280px) {
     .body {
         width: auto;
         text-align: center;
@@ -473,7 +473,7 @@ a {
         display: none;
     }
     .soon {
-        width: 65%;
+        width: 75%;
         text-align: center;
         margin-bottom: 85px;
     }
@@ -497,6 +497,6 @@ a {
     a {
         font-size: 25px;
         text-align: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 }
