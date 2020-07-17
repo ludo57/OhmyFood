@@ -1,166 +1,120 @@
 body {
     margin: 0;
     padding: 0px;
-    height: auto;
     width: auto;
+    justify-content: center;
     box-shadow: 0px 0px 5px grey;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:#FDFFFD;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }
 
 .head {
-    font-size: 45px;
-    margin: auto;
-    height: auto;
+    font-size: 35px;
     text-align: center;
     background-color: green;
     color: yellow;
-    margin-bottom: 20px;
-}
-
-.page-menu {
-    overflow: hidden;
 }
 
 h1 {
     margin: 0;
-    font-size: 65px;
-}
-
-.choix-menus {
-    display: flex;
-    text-align: center;
-    flex-direction: column-reverse;
-    overflow: hidden;
-}
-
-.partie1 {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.partie2 {
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .titre {
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    background: linear-gradient(rgba(111, 179, 139, 0.555), rgb(53, 211, 22));
+    background: -webkit-linear-gradient(rgba(111, 179, 139, 0.555), rgb(53, 211, 22));
+    background: -moz-linear-gradient(rgba(111, 179, 139, 0.555), rgb(53, 211, 22));
+    background: -o-linear-gradient(rgba(111, 179, 139, 0.555), rgb(53, 211, 22));
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+}
+
+.nom-menu {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
     width: 100%;
+}
+
+.image {
+    width: 30%;
     margin: 0;
     padding: 0;
-    padding-top: 150px;
-    font-size: 20px;
-    justify-items: center;
+}
+
+.image>img {
+    width: 100%;
+}
+
+.paragraphe {
+    margin: 0;
+    padding: 0;
+}
+
+.paragraphe>p {
+    margin: 0;
+    padding: 0;
+}
+
+.soulignement {
+    width: 0%;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.5s;
+    background-color: black;
+}
+
+.paragraphe:hover>.soulignement {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.esquisse {
+    padding-bottom: 50px;
+}
+
+.oeuvre {
+    padding-bottom: 50px;
+}
+
+.art {
+    padding-bottom: 50px;
+}
+
+.plateau-repas {
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+
+.menu {
     display: flex;
-    flex-direction: column-reverse;
-}
-
-.icone {
-    font-size: 20px;
-}
-
-.lien {
-    width: 300px;
-    text-align: center;
-    height: 400px;
-    transition-duration: 300ms;
-    margin-bottom: 15px;
-}
-
-.page1 {
-    font-size: 20px;
+    justify-content: space-evenly;
     text-align: center;
     width: 100%;
-    height: 100%;
-    background-color: #fcdfcb;
-    transform: scale(1);
+    font-size: 16px;
 }
 
-.page1 .titre {
-    background: linear-gradient(to right, #2525259d 0%, #111111f1 87%);
-    background: -o-linear-gradient(to right, #2525259d 0%, #111111f1 87%);
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
-}
-
-.page1 .icone {
-    font-size: 25px;
-    background: linear-gradient(to right, #f16265 0%, #f6916a 87%);
-    background: -o-linear-gradient(to right, #f16265 0%, #f6916a 87%);
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
-    flex-direction: column-reverse;
-}
-
-.lien:hover {
-    transform: scale(1.05);
-    overflow: hidden;
-}
-
-.page2 {
-    font-size: 20px;
+.repas {
+    width: 50%;
     text-align: center;
-    width: 100%;
-    height: 100%;
-    transform: scale(1);
-    background: linear-gradient(to right, #df8116ee 0%, #b55cd8cc 87%);
-    background: -o-linear-gradient(to right, #df8116ee 0%, #b55cd8cc 87%);
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
 }
 
-.page3 {
-    font-size: 20px;
+.prix {
+    font-weight: bolder;
+    font-style: italic;
+    width: 50%;
     text-align: center;
-    width: 100%;
-    height: 100%;
-    transform: scale(1);
-    background: linear-gradient(to right, #152e9ce8 0%, #2083c5cc 87%);
-    background: -o-linear-gradient(to right, #152e9ce8 0%, #2083c5cc 87%);
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
-}
-
-.page4 {
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    transform: scale(1);
-    background: linear-gradient(rgba(95, 136, 112, 0.774), rgba(56, 228, 21, 0.911));
-    background: -o-linear-gradient(rgba(95, 136, 112, 0.774), rgba(56, 228, 21, 0.911));
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
-}
-
-a {
-    text-decoration: none;
-    color: yellow;
-    overflow: hidden;
 }
 
 .soon {
@@ -192,6 +146,7 @@ a {
 }
 
 .suspension span {
+    animation-name: dots;
     animation-name: dots;
     -webkit-animation-name: dots;
     -moz-animation-name: dots;
@@ -238,6 +193,25 @@ a {
     }
 }
 
+@-moz-keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.6) translateY(10px);
+    }
+}
+
+@-o-keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.6) translateY(10px);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+}
+
 .footer {
     display: flex;
     position: fixed;
@@ -261,11 +235,6 @@ a {
     margin: 0;
     padding-right: 20px;
     text-align: center;
-}
-
-.footer>a {
-    text-decoration: none;
-    overflow: hidden;
 }
 
 .mail:hover {
@@ -311,7 +280,7 @@ a {
         transform: translate(1px, 1px) rotate(0deg);
     }
     10% {
-        transform: translate(-1px, -2px) rotate(-2deg);
+        transform: translate(-1px, -2px) rotate(-1deg);
     }
     20% {
         transform: translate(-3px, 0px) rotate(1deg);
@@ -323,13 +292,13 @@ a {
         transform: translate(1px, -1px) rotate(1deg);
     }
     50% {
-        transform: translate(-1px, 2px) rotate(-2deg);
+        transform: translate(-1px, 2px) rotate(-1deg);
     }
     60% {
         transform: translate(-3px, 1px) rotate(0deg);
     }
     70% {
-        transform: translate(3px, 1px) rotate(-2deg);
+        transform: translate(3px, 1px) rotate(-1deg);
     }
     80% {
         transform: translate(-1px, -1px) rotate(1deg);
@@ -338,7 +307,43 @@ a {
         transform: translate(1px, 2px) rotate(0deg);
     }
     100% {
-        transform: translate(1px, -2px) rotate(-2deg);
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@-moz-keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
     }
 }
 
@@ -375,10 +380,42 @@ a {
     }
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
-        -webkit-transform: translate(1px, -2px) rotate(-1deg);
-        -moz-transform: translate(1px, -2px) rotate(-1deg);
-        -ms-transform: translate(1px, -2px) rotate(-1deg);
-        -o-transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@-o-keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
     }
 }
 
@@ -386,60 +423,68 @@ a {
     .body {
         width: auto;
         text-align: center;
-        justify-content: center;
         padding: 0;
         margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
     }
     h1 {
         font-size: 40px;
         text-align: center;
     }
-    .lien {
-        margin: 15px auto;
+    h2 {
+        font-size: 30px;
+        text-align: center;
     }
-    .partie1 {
-        display: block;
-        justify-content: center;
-        width: auto;
-    }
-    .page-menu {
+    .plateau-repas {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
-        justify-content: center;
+        justify-content: space-evenly;
     }
-    .partie2 {
+    .nom-menu {
+        display: flex;
+        font-size: 25px;
+        width: 100%;
+    }
+    .menu {
         display: block;
         text-align: center;
         justify-content: space-evenly;
     }
-    a {
-        display: flex;
+    .repas {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
         justify-content: space-evenly;
-        text-align: center;
-        width: auto;
     }
-    .titre {
+    .prix {
+        width: 100%;
         font-size: 20px;
-        text-align: center;
     }
-    .info {
-        font-size: 20px;
+    .paragraphe>p {
+        width: 100%;
         text-align: center;
+        justify-content: space-evenly;
+    }
+    .paragraphe p {
+        font-size: 25px;
+    }
+    .image {
+        display: none;
     }
     .soon {
-        width: 55%;
-        justify-content: center;
+        width: 65%;
+        text-align: center;
         margin-bottom: 85px;
     }
     .pro>p {
-        font-size: 25px;
+        font-size: 20px;
         width: 50%;
         margin: 0;
         padding: 0;
     }
     .suspension>span {
-        font-size: 25px;
+        font-size: 20px;
         margin: 0;
         width: 50%;
     }
@@ -447,15 +492,11 @@ a {
         position: fixed;
         bottom: 0;
         width: 100%;
+        justify-content: space-around;
+    }
+    a {
+        font-size: 25px;
         text-align: center;
         justify-content: space-evenly;
-    }
-    .mentions>p {
-        font-size: 25px;
-        text-align: center;
-    }
-    .mail p {
-        font-size: 25px;
-        text-align: center;
     }
 }

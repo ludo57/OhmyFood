@@ -3,9 +3,8 @@ body {
     padding: 0px;
     width: auto;
     justify-content: center;
+    background-color: #ebdef0;
     box-shadow: 0px 0px 5px grey;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
 }
 
 .head {
@@ -23,10 +22,10 @@ h1 {
     font-size: 40px;
     text-align: center;
     font-style: italic;
-    background: linear-gradient(rgba(111, 179, 139, 0.555), rgb(53, 211, 22));
-    background: -webkit-linear-gradient(rgba(111, 179, 139, 0.555), rgb(53, 211, 22));
-    background: -moz-linear-gradient(rgba(111, 179, 139, 0.555), rgb(53, 211, 22));
-    background: -o-linear-gradient(rgba(111, 179, 139, 0.555), rgb(53, 211, 22));
+    background: linear-gradient(to right, #df8116ee 0%, #b55cd8cc 87%);
+    background: -webkit-linear-gradient(to right, #df8116ee 0%, #b55cd8cc 87%);
+    background: -moz-linear-gradient(to right, #df8116ee 0%, #b55cd8cc 87%);
+    background: -o-linear-gradient(to right, #df8116ee 0%, #b55cd8cc 87%);
     background-clip: content-box;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -34,6 +33,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     -o-text-fill-color: transparent;
+    padding-bottom: 10px;
 }
 
 .nom-menu {
@@ -76,18 +76,6 @@ h1 {
     transition: 0.5s;
 }
 
-.esquisse {
-    padding-bottom: 50px;
-}
-
-.oeuvre {
-    padding-bottom: 50px;
-}
-
-.art {
-    padding-bottom: 50px;
-}
-
 .plateau-repas {
     justify-content: space-evenly;
     margin-bottom: 25px;
@@ -101,19 +89,38 @@ h1 {
     justify-content: space-evenly;
     text-align: center;
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .repas {
-    width: 50%;
+    width: 60%;
     text-align: center;
 }
 
 .prix {
     font-weight: bolder;
     font-style: italic;
-    width: 50%;
+    width: 40%;
     text-align: center;
+}
+
+.appetit {
+    color: orange;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.plaisir {
+    color: darkorchid;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.gourmandises {
+    text-align: justify;
+    font-size: 18px;
+    color: rgba(43, 46, 226, 0.877);
+    padding-bottom: 50px;
 }
 
 .soon {
@@ -145,7 +152,6 @@ h1 {
 }
 
 .suspension span {
-    animation-name: dots;
     animation-name: dots;
     -webkit-animation-name: dots;
     -moz-animation-name: dots;
@@ -421,28 +427,27 @@ a {
 @media all and (max-width: 1024px) {
     .body {
         width: auto;
-        text-align: center;
+        text-align: justify;
         padding: 0;
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
     }
     h1 {
-        font-size: 40px;
+        font-size: 55px;
         text-align: center;
     }
     h2 {
-        font-size: 30px;
+        font-size: 35px;
         text-align: center;
     }
     .plateau-repas {
         width: 100%;
-        display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
     .nom-menu {
         display: flex;
-        font-size: 25px;
+        font-size: 30px;
         width: 100%;
     }
     .menu {
@@ -453,8 +458,7 @@ a {
     .repas {
         width: 100%;
         font-size: 20px;
-        text-align: center;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     .prix {
         width: 100%;
@@ -474,16 +478,16 @@ a {
     .soon {
         width: 65%;
         text-align: center;
-        margin-bottom: 85px;
+        margin-bottom: 90px;
     }
     .pro>p {
-        font-size: 20px;
+        font-size: 30px;
         width: 50%;
         margin: 0;
         padding: 0;
     }
     .suspension>span {
-        font-size: 20px;
+        font-size: 30px;
         margin: 0;
         width: 50%;
     }
@@ -494,7 +498,7 @@ a {
         justify-content: space-around;
     }
     a {
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
         justify-content: space-evenly;
     }
